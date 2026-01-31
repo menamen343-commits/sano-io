@@ -1,258 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>حلول رقمية ذكية | مواقع وأنظمة احترافية</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700;800&display=swap" rel="stylesheet">
-
-<style>
-body{
-  margin:0;
-  font-family:'Tajawal',sans-serif;
-  background:#f4f6f9;
-  color:#333;
-  line-height:1.6;
-}
-header{
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  color:#fff;
-  padding:60px 20px;
-  text-align:center;
-}
-header h1{font-size:2.4rem;margin-bottom:10px;}
-header p{max-width:800px;margin:auto;font-size:1.1rem}
-
-.main-cta{
-  display:inline-block;
-  margin-top:20px;
-  background:#25d366;
-  color:#fff;
-  padding:14px 32px;
-  border-radius:40px;
-  font-weight:700;
-  text-decoration:none;
-}
-
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:50px 20px;
-}
-h2{
-  text-align:center;
-  margin-bottom:25px;
-  color:#203a43;
-  font-size:1.9rem;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:18px;
-}
-
-.card{
-  background:#fff;
-  border-radius:16px;
-  padding:20px;
-  box-shadow:0 10px 22px rgba(0,0,0,0.07);
-}
-.card img{
-  width:100%;
-  border-radius:12px;
-  margin-bottom:12px;
-}
-.card h3{margin:0;color:#2c5364;font-size:1.2rem}
-.price{
-  font-size:1.5rem;
-  font-weight:800;
-  margin:10px 0;
-}
-.card ul{padding-right:18px;font-size:0.95rem}
-.card ul li{margin-bottom:6px;}
-.card a{
-  display:inline-block;
-  margin-top:15px;
-  background:#25d366;
-  color:#fff;
-  padding:10px 26px;
-  border-radius:32px;
-  text-decoration:none;
-  font-weight:700;
-  font-size:1rem;
-}
-
-footer{
-  background:#0f2027;
-  color:#fff;
-  text-align:center;
-  padding:30px 20px;
-  font-size:0.9rem;
-}
-
-.fixed-whatsapp{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  background:#25d366;
-  color:#fff;
-  padding:14px 18px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
-  box-shadow:0 7px 18px rgba(0,0,0,.3);
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>حلول رقمية ذكية للمؤسسات والمدارس</h1>
-<p>
-من صفحة تعريفية بسيطة… إلى أنظمة تقييم ودوام ذكية  
-تحوّل البيانات إلى قرارات وتدعم توسعك في السوق.
-</p>
-<a class="main-cta" href="https://wa.me/967775169148">تواصل عبر واتساب الآن</a>
-</header>
-
-<section>
-<h2>المواقع التعريفية</h2>
-<div class="grid">
-
-<div class="card">
-<img src="https://images.pexels.com/photos/3184309/pexels-photo-3184309.jpeg" alt="موقع تعريفي بسيط">
-<h3>موقع تعريفي بسيط (1–3 صفحات)</h3>
-<p class="price">60$</p>
-<ul>
-<li>تصميم أنيق وسريع</li>
-<li>متوافق مع الهاتف</li>
-<li>مثالي للإعلانات</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب الخدمة</a>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/3182768/pexels-photo-3182768.jpeg" alt="موقع للمنظمات">
-<h3>موقع تعريفي (3–5 صفحات)</h3>
-<p class="price">100$</p>
-<ul>
-<li>إدخال وترتيب يدوي</li>
-<li>تنظيم احترافي</li>
-<li>مناسب للمنظمات</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب الخدمة</a>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="موقع ذكي">
-<h3>موقع ذكي مع بحث داخلي</h3>
-<p class="price">150$</p>
-<ul>
-<li>بحث داخلي ذكي</li>
-<li>تنظيم تلقائي للملفات</li>
-<li>تجربة مستخدم ممتازة</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب الخدمة</a>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>مواقع وأنظمة متقدمة</h2>
-<div class="grid">
-
-<div class="card">
-<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="موقع احترافي متقدم">
-<h3>موقع احترافي متكامل</h3>
-<p class="price">250$</p>
-<ul>
-<li>تبويبات وتصنيفات احترافية</li>
-<li>بحث داخلي ذكي</li>
-<li>تقارير وتحليلات ذكية</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب الخدمة</a>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>الأنظمة التعليمية الذكية</h2>
-<div class="grid">
-
-<div class="card">
-<img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg" alt="نظام تقييم شامل">
-<h3>نظام تقييم الأداء التعليمي الشامل</h3>
-<p class="price">200$</p>
-<ul>
-<li>تقييم أداء المعلم الفردي</li>
-<li>تقييم الكادر التعليمي ككل</li>
-<li>تحليل استراتيجية المدرسة الحالية</li>
-<li>بناء استراتيجية هجومية للتوسع</li>
-<li>توليد الخطط العلاجية الذكية</li>
-<li>نظام توقيع ذكي للمعلمين والإدارة</li>
-<li>طباعة التقارير الاحترافية</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب النظام</a>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg" alt="نظام تقييم معلم">
-<h3>نظام تقييم أداء المعلم (فردي)</h3>
-<p class="price">100$</p>
-<ul>
-<li>تقييم ذكي فردي</li>
-<li>توليد خطط علاجية فردية</li>
-<li>نظام توقيع ذكي</li>
-<li>تقارير ورسوم بيانية واضحة</li>
-<li>طباعة التقرير مباشرة</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب النظام</a>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>أنظمة الدوام الذكية</h2>
-<div class="grid">
-
-<div class="card">
-<img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg" alt="حافظة دوام ذكية">
-<h3>حافظة دوام ذكية (بيانات + بصمة + توقيع)</h3>
-<p class="price">150$</p>
-<ul>
-<li>تخزين بيانات الموظفين</li>
-<li>بصمة حضور وانصراف</li>
-<li>توقيع مباشر</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب النظام</a>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/3184321/pexels-photo-3184321.jpeg" alt="حافظة دوام بسيطة">
-<h3>حافظة دوام ذكية (بدون بيانات مخزنة)</h3>
-<p class="price">90$</p>
-<ul>
-<li>إدخال مباشر</li>
-<li>بصمة + توقيع</li>
-<li>مناسبة للفرق الصغيرة</li>
-</ul>
-<a href="https://wa.me/967775169148">اطلب النظام</a>
-</div>
-
-</div>
-</section>
-
-<footer>
-© 2026 — حلول رقمية ذكية | تصميم مواقع وأنظمة احترافية
-</footer>
-
-<a class="fixed-whatsapp" href="https://wa.me/967775169148">💬</a>
-
-</body>
-</html>
