@@ -1,307 +1,570 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>حلول رقمية ذكية | مواقع وأنظمة احترافية</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANO | للحلول الرقمية الذكية</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 
-<style>
-body{
-  margin:0;
-  font-family:'Tajawal',sans-serif;
-  background:#f4f6f9;
-  color:#333;
-  line-height:1.6;
-}
-header{
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  color:#fff;
-  padding:60px 20px;
-  text-align:center;
-}
-header h1{font-size:2.4rem;margin-bottom:10px;}
-header p{max-width:800px;margin:auto;font-size:1.1rem}
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #000000;
+            --dark-blue: #1e3a8a;
+            --red-price: #dc2626;
+            --light: #f8fafc;
+            --green: #10b981;
+            --yellow: #f59e0b;
+            --blue: #3b82f6;
+            --purple: #8b5cf6;
+            --whatsapp: #25D366;
+        }
 
-.main-cta{
-  display:inline-block;
-  margin-top:20px;
-  background:#25d366;
-  color:#fff;
-  padding:14px 32px;
-  border-radius:40px;
-  font-weight:700;
-  text-decoration:none;
-}
+        * { box-sizing: border-box; }
 
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:50px 20px;
-}
-h2{
-  text-align:center;
-  margin-bottom:25px;
-  color:#203a43;
-  font-size:1.9rem;
-}
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5f9;
+            color: #000000;
+            padding-bottom: 120px;
+        }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:18px;
-}
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
 
-.card{
-  background:#fff;
-  border-radius:16px;
-  padding:20px;
-  box-shadow:0 10px 22px rgba(0,0,0,0.07);
-}
-.card img{
-  width:100%;
-  border-radius:12px;
-  margin-bottom:12px;
-}
-.card h3{margin:0;color:#2c5364;font-size:1.2rem}
-.price{
-  font-size:1.5rem;
-  font-weight:800;
-  margin:10px 0;
-}
-.card ul{padding-right:18px;font-size:0.95rem}
-.card ul li{margin-bottom:6px;}
-.card a{
-  display:inline-block;
-  margin-top:10px;
-  background:#25d366;
-  color:#fff;
-  padding:10px 26px;
-  border-radius:32px;
-  text-decoration:none;
-  font-weight:700;
-  font-size:1rem;
-  transition:0.3s;
-}
-.card a:hover{
-  background:#1ebe57;
-}
+        header h1 { margin-bottom: 15px; font-size: 2.5rem; font-weight: 900; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; opacity: 1; font-weight: 500; margin-bottom: 30px; line-height: 1.8; max-width: 700px; margin-left: auto; margin-right: auto;}
 
-footer{
-  background:#0f2027;
-  color:#fff;
-  text-align:center;
-  padding:30px 20px;
-  font-size:0.9rem;
-}
+        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
 
-.fixed-whatsapp{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  background:#25d366;
-  color:#fff;
-  padding:14px 18px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
-  box-shadow:0 7px 18px rgba(0,0,0,.3);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  z-index:9999;
-}
+        .section-title {
+            text-align: center; margin-bottom: 40px; font-size: 2rem; font-weight: 900;
+            color: #000; border-bottom: 4px solid #000; padding-bottom: 15px; 
+            display: table; margin-left: auto; margin-right: auto;
+        }
 
-.whatsapp-text{
-  position:absolute;
-  bottom:70px;
-  left:0;
-  width:220px;
-  background:#fff;
-  color:#000;
-  text-align:center;
-  padding:8px 10px;
-  border-radius:12px;
-  font-size:0.9rem;
-  font-weight:700;
-  box-shadow:0 4px 12px rgba(0,0,0,.2);
-  opacity:0;
-  transition: opacity 0.5s ease;
-}
-</style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        /* Card Design */
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 6px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.1); }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e2e8f0;
+        }
+
+        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+
+        /* عناوين الخدمات - أزرق داكن */
+        .card h3 { 
+            margin-top: 0; 
+            margin-bottom: 10px; 
+            font-size: 1.4rem; 
+            color: var(--dark-blue); 
+            font-weight: 900; 
+            line-height: 1.4; 
+        }
+        
+        /* السعر - أحمر وصغير */
+        .price { 
+            font-size: 1.4rem; 
+            font-weight: 900; 
+            color: var(--red-price); 
+            margin: 10px 0; 
+            direction: ltr;
+            text-align: right;
+        }
+        
+        .hook { 
+            font-weight: 800; color: #000; display: block; 
+            margin-bottom: 20px; font-size: 1rem; background: #f1f5f9; padding: 12px; border-radius: 8px;
+            border-right: 5px solid #555;
+        }
+
+        ul { list-style: none; padding: 0; margin: 0; flex-grow: 1; }
+        
+        ul li { 
+            padding: 12px 0; 
+            border-bottom: 1px solid #ddd; 
+            font-size: 1rem; 
+            font-weight: 700;
+            color: #000; 
+            display: flex; 
+            align-items: flex-start; 
+        }
+        ul li:before { content: "✔"; color: var(--green); margin-left: 10px; font-weight: 900; font-size: 1.2rem; flex-shrink: 0; }
+
+        .views-badge {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 0.9rem;
+            color: #000;
+            font-weight: bold;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #ccc;
+        }
+        .views-badge svg { width: 20px; height: 20px; margin-left: 6px; fill: #000; }
+
+        /* زر الطلب - أخضر */
+        .order-btn {
+            display: block;
+            text-align: center;
+            background: var(--whatsapp);
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            margin-top: 15px;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.2s;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .order-btn:hover { 
+            background: #1da851;
+            transform: translateY(-2px);
+        }
+
+        /* Colors override for borders */
+        .cat-entry { border-color: var(--green); }
+        .cat-entry .hook { border-color: var(--green); background: #ecfdf5; color: #000; }
+        
+        .cat-value { border-color: var(--yellow); }
+        .cat-value .hook { border-color: var(--yellow); background: #fffbeb; color: #000; }
+        
+        .cat-auth { border-color: var(--blue); }
+        .cat-auth .hook { border-color: var(--blue); background: #eff6ff; color: #000; }
+        
+        .cat-retention { border-color: var(--purple); }
+        .cat-retention .hook { border-color: var(--purple); background: #f5f3ff; color: #000; }
+
+        /* Hooks Section */
+        .hooks-section {
+            background: white;
+            padding: 50px 20px;
+            border-radius: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
+        }
+        .hooks-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .hook-item {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-top: 5px solid var(--green);
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        
+        .contact-number {
+            font-size: 1.8rem;
+            color: var(--green);
+            font-weight: 900;
+            text-decoration: none;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        /* WhatsApp Bubble Animation */
+        .wa-float-container {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 999999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wa-bubble {
+            background-color: white;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 50px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2); 
+            margin-bottom: 15px;
+            font-size: 1rem;
+            font-weight: 900;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            pointer-events: none;
+            /* تم حذف الإطار الأسود */
+        }
+        
+        .wa-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 8px 8px 0;
+            border-style: solid;
+            border-color: white transparent transparent transparent; 
+        }
+
+        .wa-bubble.show { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+
+        .wa-button {
+            background-color: var(--whatsapp);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            text-decoration: none;
+            transition: transform 0.3s;
+            animation: pulse 2.5s infinite;
+        }
+        .wa-button:hover { transform: scale(1.1); }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 25px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>حلول رقمية ذكية للمؤسسات والمدارس</h1>
-<p>
-من صفحة تعريفية بسيطة… إلى أنظمة تقييم ودوام ذكية  
-تحوّل البيانات إلى قرارات وتدعم توسعك في السوق.
-</p>
-<a class="main-cta" href="https://wa.me/967775169148?text=مرحبًا%20أريد%20الاستفسار%20عن%20الخدمات" target="_blank">
-تواصل عبر واتساب الآن
-</a>
-</header>
+    <header>
+        <h1>SANO للحلول الرقمية الذكية</h1>
+        <p>نحول أفكارك إلى أنظمة تعمل بذكاء... <br>من واجهات إعلانية إلى أنظمة تقييم شاملة</p>
+        <a href="#products" class="order-btn" style="background: var(--green); display:inline-block; padding: 15px 50px; font-size:1.1rem; color: white;">تصفح الخدمات</a>
+    </header>
 
-<section>
-<h2>المواقع التعريفية</h2>
-<div class="grid">
+    <div class="container" id="products">
 
-<div class="card">
-<img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="موقع تعريفي بسيط">
-<h3>موقع تعريفي بسيط (1–3 صفحات)</h3>
-<p class="price">60$</p>
-<ul>
-<li>تصميم أنيق وسريع</li>
-<li>متوافق مع الهاتف</li>
-<li>مثالي للإعلانات</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20موقع%20تعريفي%20بسيط%201-3%20صفحات" target="_blank">اطلب النظام</a>
-</div>
+        <div class="section-title"><span style="color: var(--green)">🟢 خدمات التصميم والمواقع (Entry)</span></div>
+        <div class="grid">
+            
+            <div class="card cat-entry">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Smart Digital Dashboard" class="card-img">
+                <div class="card-content">
+                    <h3>1️⃣ تصميم صفحات وواجهات إعلانية ذكية</h3>
+                    <div class="price">$15 - $35</div>
+                    <span class="hook">🎨 واجهة تجذب الأنظار... وتضاعف المبيعات</span>
+                    <ul>
+                        <li>تصميم حسب الطلب (عدد الصفحات ونمط العمل)</li>
+                        <li>خيارات متعددة: مع تحليل إحصائي أو بدون</li>
+                        <li>تسليم سريع وجودة عالية</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: تصميم صفحات وواجهات إعلانية (السعر: 15-35$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="موقع للمنظمات">
-<h3>موقع تعريفي (3–5 صفحات)</h3>
-<p class="price">100$</p>
-<ul>
-<li>إدخال وترتيب يدوي</li>
-<li>تنظيم احترافي</li>
-<li>مناسب للمنظمات</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20موقع%20تعريفي%203-5%20صفحات" target="_blank">اطلب النظام</a>
-</div>
+            <div class="card cat-entry">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" alt="Web Design" class="card-img">
+                <div class="card-content">
+                    <h3>2️⃣ موقع تعريفي بسيط</h3>
+                    <div class="price">$60</div>
+                    <span class="hook">🌐 موقعك خلال أيام… بسعر إعلان ممول!</span>
+                    <ul>
+                        <li>صفحة واحدة إلى 3 صفحات</li>
+                        <li>تصميم أنيق متوافق مع الجوال</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: موقع تعريفي بسيط (السعر: 60$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg" alt="موقع ذكي">
-<h3>موقع ذكي مع بحث داخلي</h3>
-<p class="price">150$</p>
-<ul>
-<li>بحث داخلي ذكي</li>
-<li>تنظيم تلقائي للملفات</li>
-<li>تجربة مستخدم ممتازة</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20موقع%20ذكي%20مع%20بحث%20داخلي" target="_blank">اطلب النظام</a>
-</div>
+            <div class="card cat-entry">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="Office Work" class="card-img">
+                <div class="card-content">
+                    <h3>3️⃣ موقع تعريفي (ترتيب يدوي)</h3>
+                    <div class="price">$100</div>
+                    <span class="hook">📂 موقع مرتب… يعكس احترافك</span>
+                    <ul>
+                        <li>3-5 صفحات مع تحكم يدوي</li>
+                        <li>مناسب للمنظمات الصغيرة</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: موقع تعريفي ترتيب يدوي (السعر: 100$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
 
-</div>
-</section>
+            <div class="card cat-entry">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Smart Analysis" class="card-img">
+                <div class="card-content">
+                    <h3>4️⃣ موقع تعريفي ذكي</h3>
+                    <div class="price">$150</div>
+                    <span class="hook">🔍 موقع ذكي... جاذب للعميل</span>
+                    <ul>
+                        <li>بحث داخلي ذكي وتنظيم تلقائي</li>
+                        <li>تجربة مستخدم متقدمة</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: موقع تعريفي ذكي (السعر: 150$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
+        </div>
 
-<section>
-<h2>مواقع وأنظمة متقدمة</h2>
-<div class="grid">
+        <div class="section-title"><span style="color: var(--yellow)">🟡 أنظمة متقدمة (Value)</span></div>
+        <div class="grid" style="grid-template-columns: 1fr;">
+            <div class="card cat-value">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80" alt="Dashboard" class="card-img" style="height: 300px;">
+                <div class="card-content">
+                    <h3>5️⃣ موقع احترافي متقدم + تحليلات</h3>
+                    <div class="price">$250</div>
+                    <span class="hook">📊 ليس موقعًا… بل لوحة تحكم ذكية لمشروعك</span>
+                    <ul>
+                        <li>لوحة تحكم (Dashboard) وتوليد تقارير</li>
+                        <li>تحليلات إحصائية + رسوم بيانية تفاعلية</li>
+                        <li>نظام تقييم ذكي وطباعة فورية</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: موقع احترافي متقدم (السعر: 250$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="موقع احترافي متقدم">
-<h3>موقع احترافي متكامل</h3>
-<p class="price">250$</p>
-<ul>
-<li>تبويبات وتصنيفات احترافية</li>
-<li>بحث داخلي ذكي</li>
-<li>تقارير وتحليلات ذكية</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20موقع%20احترافي%20متكامل" target="_blank">اطلب النظام</a>
-</div>
+        <div class="section-title"><span style="color: var(--blue)">🔵 أنظمة تعليمية (Authority)</span></div>
+        <div class="grid">
+            <div class="card cat-auth">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Education Staff" class="card-img">
+                <div class="card-content">
+                    <h3>6️⃣ نظام تقييم ذكي للكادر التعليمي</h3>
+                    <div class="price">$200</div>
+                    <span class="hook">🏫 قيادة مبنية على البيانات... وبيئة عمل محفزة</span>
+                    <ul>
+                        <li>نظام ذكي لتقييم أداء المعلم وفق المعايير التربوية العالمية</li>
+                        <li>تحليل بيئة العمل وقياس الرضا</li>
+                        <li>نظام تقييم جماعي وتحليل استراتيجي (SWOT)</li>
+                        <li>اقتراح خطط تدريبية ذكية</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: نظام تقييم الكادر التعليمي (السعر: 200$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
 
-</div>
-</section>
+            <div class="card cat-auth">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Teacher Evaluation" class="card-img">
+                <div class="card-content">
+                    <h3>7️⃣ نظام تقييم المعلم الشامل (المطور)</h3>
+                    <div class="price">$85</div>
+                    <span class="hook">🎯 حلول ذكية لرفع الأداء... من التشخيص للعلاج</span>
+                    <ul>
+                        <li>تقييم شامل وفق معايير تربوية وتحليل بيئي</li>
+                        <li>تحليل درجات الطلاب وكشف الفجوات</li>
+                        <li>تقييم الخطط اليومية والفصلية</li>
+                        <li>تحليل إحصائي وتشخيصي ذكي</li>
+                        <li>اقتراح خطط علاجية وطباعة تقارير</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: نظام تقييم المعلم الشامل (السعر: 85$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
+        </div>
 
-<section>
-<h2>الأنظمة التعليمية الذكية</h2>
-<div class="grid">
+        <div class="section-title"><span style="color: var(--purple)">🟣 أنظمة إدارية (Retention)</span></div>
+        <div class="grid">
+            <div class="card cat-retention">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Fingerprint" class="card-img">
+                <div class="card-content">
+                    <h3>8️⃣ حافظة دوام (بيانات مخزنة)</h3>
+                    <div class="price">$150</div>
+                    <span class="hook">⏱️ وقتك محسوب بدقة مع البصمة!</span>
+                    <ul>
+                        <li>تخزين بيانات كامل وتتبع بصمة</li>
+                        <li>إصدار تقارير دورية دقيقة</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: حافظة دوام (بيانات مخزنة) (السعر: 150$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg" alt="نظام تقييم الكادر التعليمي">
-<h3>نظام تقييم الكادر التعليمي الذكي</h3>
-<p class="price">200$</p>
-<ul>
-<li>تقييم شامل لأداء جميع المعلمين والإداريين</li>
-<li>تحديد الفجوات التدريبية الذكية</li>
-<li>تحليل بياني وإحصائي كامل للأداء</li>
-<li>اقتراح خطة علاجية ذكية لتحسين الأداء واستثمار نقاط القوة</li>
-<li>نظام ذكي يحلل ويطور ويطبّق الاستراتيجيات تلقائيًا</li>
-<li>تقارير احترافية قابلة للطباعة مع رسوم بيانية تفاعلية</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20نظام%20تقييم%20الكادر%20التعليمي%20الذكي" target="_blank">اطلب النظام</a>
-</div>
+            <div class="card cat-retention">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Checklist" class="card-img">
+                <div class="card-content">
+                    <h3>9️⃣ حافظة دوام (مباشر)</h3>
+                    <div class="price">$90</div>
+                    <span class="hook">📝 تسجيل حضور مباشر وبصمة</span>
+                    <ul>
+                        <li>إدخال مباشر للحضور</li>
+                        <li>نظام بصمة وتوقيع مباشر</li>
+                    </ul>
+                    <div class="views-badge"><span class="view-count">0</span> مشاهدة مهتمة <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بطلب: حافظة دوام (مباشر) (السعر: 90$)" target="_blank" class="order-btn">اطلب النظام الآن</a>
+                </div>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/4145192/pexels-photo-4145192.jpeg" alt="نظام تقييم معلم">
-<h3>نظام تقييم أداء المعلم (فردي)</h3>
-<p class="price">100$</p>
-<ul>
-<li>تقييم ذكي فردي</li>
-<li>توليد خطط علاجية فردية</li>
-<li>نظام توقيع ذكي</li>
-<li>تقارير ورسوم بيانية واضحة</li>
-<li>طباعة التقرير مباشرة</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20نظام%20تقييم%20أداء%20المعلم%20الفردي" target="_blank">اطلب النظام</a>
-</div>
+        <div class="hooks-section">
+            <h2>💎 لماذا نحن خيارك الأفضل؟</h2>
+            <div class="hooks-grid">
+                <div class="hook-item">💎 استثمار بسيط... لعائد ضخم</div>
+                <div class="hook-item">⚡ تنفيذ سريع… جاهز للاستخدام</div>
+                <div class="hook-item">🧠 ذكاء بدون تعقيد</div>
+                <div class="hook-item">📊 قرارات مبنية على بيانات</div>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.2rem; font-weight: 700; line-height: 1.8; color: #000;">
+                اختر المنتج المناسب لك… ودعنا نرتب كل شيء رقمياً وذكياً.<br>
+                حلول مصممة خصيصاً لتطوير بيئة العمل والتعليم.
+            </p>
+        </div>
 
-</div>
-</section>
+    </div>
 
-<section>
-<h2>أنظمة الدوام الذكية</h2>
-<div class="grid">
+    <div class="wa-float-container">
+        <div class="wa-bubble" id="waBubble">مرحبا بك</div>
+        <a href="https://api.whatsapp.com/send?phone=967775169148&text=مرحبا، أرغب بالاستفسار عن خدماتكم" target="_blank" class="wa-button">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+    </div>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="حافظة دوام ذكية">
-<h3>حافظة دوام ذكية (بيانات + بصمة + توقيع)</h3>
-<p class="price">150$</p>
-<ul>
-<li>تخزين بيانات الموظفين</li>
-<li>بصمة حضور وانصراف</li>
-<li>توقيع مباشر</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20حافظة%20دوام%20ذكية%20بيانات%20+%20بصمة%20+%20توقيع" target="_blank">اطلب النظام</a>
-</div>
+    <footer>
+        <div class="contact-info">
+            <h3>بيانات الاتصال</h3>
+            <p style="font-size: 1.2rem; font-weight: bold;">هاتف: <a href="tel:+967730932071" class="contact-number">+967 730 932 071</a></p>
+        </div>
+        <p>جميع الحقوق محفوظة &copy; 2026 | SANO للحلول الرقمية الذكية</p>
+    </footer>
 
-<div class="card">
-<img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" alt="حافظة دوام بسيطة">
-<h3>حافظة دوام ذكية (بدون بيانات مخزنة)</h3>
-<p class="price">90$</p>
-<ul>
-<li>إدخال مباشر</li>
-<li>بصمة + توقيع</li>
-<li>مناسبة للفرق الصغيرة</li>
-</ul>
-<a href="https://wa.me/967775169148?text=أريد%20طلب%20حافظة%20دوام%20ذكية%20بدون%20بيانات%20مخزنة" target="_blank">اطلب النظام</a>
-</div>
+    <script>
+        // 1. View Count Logic
+        document.querySelectorAll('.view-count').forEach((counter, index) => {
+            let storageKey = 'product_view_v13_' + index;
+            let savedViews = localStorage.getItem(storageKey);
+            let finalViews;
+            if (savedViews) {
+                let currentViews = parseInt(savedViews);
+                let increase = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+                finalViews = currentViews + increase;
+            } else {
+                finalViews = Math.floor(Math.random() * (500 - 120 + 1)) + 120;
+            }
+            localStorage.setItem(storageKey, finalViews);
+            counter.innerText = finalViews;
+        });
 
-</div>
-</section>
+        // 2. WhatsApp Bubble Logic
+        const bubble = document.getElementById('waBubble');
+        
+        function sleep(ms) { 
+            return new Promise(resolve => setTimeout(resolve, ms)); 
+        }
 
-<footer>
-© 2026 — حلول رقمية ذكية | تصميم مواقع وأنظمة احترافية
-</footer>
+        async function runBubbleCycle() {
+            while(true) {
+                // 1. مرحبا بك
+                bubble.innerText = "مرحبا بك 👋";
+                bubble.classList.add('show');
+                await sleep(2000);
+                bubble.classList.remove('show');
+                await sleep(500);
 
-<!-- أيقونة واتساب أسفل الصفحة مع رسالة جاهزة -->
-<a class="fixed-whatsapp" href="https://wa.me/967775169148?text=أود%20أن%20أستفسر%20عن%20خدماتكم" target="_blank">
-💬
-<span class="whatsapp-text" id="whatsapp-text"></span>
-</a>
+                // 2. انقر على طلب الخدمة
+                bubble.innerText = "انقر على طلب الخدمة التي تريدها 👆";
+                bubble.classList.add('show');
+                await sleep(3000);
+                bubble.classList.remove('show');
+                await sleep(500);
 
-<script>
-const messages = ["مرحبًا بك","انقر على زر الخدمة","ليوصلك إلينا"];
-const textEl = document.getElementById('whatsapp-text');
-let index = 0;
+                // 3. ليوصلك إلينا
+                bubble.innerText = "ليوصلك إلينا 🚀";
+                bubble.classList.add('show');
+                await sleep(2000);
+                bubble.classList.remove('show');
+                await sleep(500);
 
-function cycleMessages(){
-  textEl.textContent = messages[index];
-  textEl.style.opacity = "1";
+                // 4. انقر للاستفسار
+                bubble.innerText = "انقر هنا لأي استفسار 💬";
+                bubble.classList.add('show');
+                await sleep(3000);
+                bubble.classList.remove('show');
 
-  setTimeout(() => {
-    textEl.style.opacity = "0";
-    index = (index + 1) % messages.length;
-  }, 2000);
-}
+                // توقف 4 ثواني
+                await sleep(4000);
+            }
+        }
 
-setInterval(cycleMessages, 3000);
-cycleMessages();
-</script>
+        // تشغيل الدورة فور تحميل الصفحة
+        runBubbleCycle();
+    </script>
 
 </body>
 </html>
