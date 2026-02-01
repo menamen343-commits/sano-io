@@ -138,6 +138,18 @@
 </head>
 <body class="text-slate-800 p-4 md:p-8">
 
+    <!-- ✅✅✅ كود الحماية المضاف ✅✅✅ -->
+    <div id="sano-gate" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #f3f4f6; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Tajawal', sans-serif;">
+        <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 90%;">
+            <h2 style="color: #1f2937; margin-bottom: 20px; font-weight: 800;">نظام حماية الاستمارة</h2>
+            <div style="margin-bottom: 20px;">
+                <input type="password" id="sano-input" placeholder="أدخل كود المرور" style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; text-align: center; font-size: 16px; outline: none; transition: border-color 0.3s;">
+            </div>
+            <button onclick="authSano()" style="background-color: #ca8a04; color: white; border: none; padding: 12px 30px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: background 0.3s; width: 100%;">دخول</button>
+            <p id="sano-msg" style="color: #ef4444; margin-top: 15px; font-size: 14px; display: none; font-weight: bold;">الكود غير صحيح</p>
+        </div>
+    </div>
+
     <!-- Save Indicator -->
     <div id="saveIndicator"><i class="fa-solid fa-check"></i> تم الحفظ تلقائياً</div>
 
@@ -423,6 +435,37 @@
     </main>
 
     <script>
+        // ✅✅✅ كود حماية الاستمارة ✅✅✅
+        // تجميد الصفحة ومنع التمرير حتى يتم فك القفل
+        document.body.style.overflow = 'hidden';
+
+        function authSano() {
+            const input = document.getElementById('sano-input');
+            const gate = document.getElementById('sano-gate');
+            const msg = document.getElementById('sano-msg');
+
+            if (input.value === 'sano') {
+                // تأثير حركي بسيط للاختفاء
+                gate.style.opacity = '0';
+                gate.style.transition = 'opacity 0.5s ease';
+                
+                setTimeout(() => {
+                    gate.remove(); // إزالة طبقة الحماية نهائياً من الـ DOM
+                    document.body.style.overflow = 'auto'; // إعادة تفعيل التمرير
+                }, 500);
+            } else {
+                msg.style.display = 'block';
+                input.style.borderColor = '#ef4444';
+            }
+        }
+        
+        // دعم زر Enter
+        document.getElementById('sano-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                authSano();
+            }
+        });
+
         // Set Gregorian Date
         const dateOptions = { year: 'numeric', month: 'numeric', day: 'numeric' };
         const dateStr = new Date().toLocaleDateString('en-GB', dateOptions); 
@@ -1018,6 +1061,4 @@
         window.addEventListener('load', loadData);
     </script>
 </body>
-</html>
-
-
+                        </html>
